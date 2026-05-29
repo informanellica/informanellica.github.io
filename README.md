@@ -23,3 +23,8 @@ Informanellica が公開するソフトウェアのカタログ。
 ## 公開
 
 GitHub の Settings → Pages で「Deploy from a branch: main / root」に設定。`git push` でデプロイされる。
+
+## 不具合・誤植の連絡
+
+カタログの誤植、リンク切れ、レイアウト崩れ等があれば
+[Issues](https://github.com/informanellica/informanellica.github.io/issues) でお知らせください。
