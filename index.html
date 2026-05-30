@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-title-key="hero_title">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Software Album | Informanellica</title>
-  <meta name="description" content="Informanellica が公開しているフリーソフトウェアの一覧です。">
+  <meta name="description" content="Informanellica が公開しているフリーソフトウェアの一覧です。" data-i18n-content="hero_lead">
   <link rel="icon" href="./assets/img/benri-na-pdf-icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -20,8 +20,9 @@
         <strong>Informanellica Software</strong>
       </a>
       <div class="d-flex align-items-center gap-3">
-        <a href="./support.html" class="text-light text-decoration-none small"><i class="bi bi-life-preserver me-1"></i>サポート</a>
-        <a href="mailto:support@informanellica.com" class="text-light text-decoration-none small"><i class="bi bi-envelope me-1"></i>お問い合わせ</a>
+        <span id="lang-switcher"></span>
+        <a href="./support.html" class="text-light text-decoration-none small"><i class="bi bi-life-preserver me-1"></i><span data-i18n="nav_support">サポート</span></a>
+        <a href="mailto:support@informanellica.com" class="text-light text-decoration-none small"><i class="bi bi-envelope me-1"></i><span data-i18n="nav_contact">お問い合わせ</span></a>
         <a href="https://github.com/informanellica" class="text-light text-decoration-none small">
           <i class="bi bi-github me-1"></i>GitHub
         </a>
@@ -34,8 +35,8 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-4">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h1 class="fw-light">Software Album</h1>
-        <p class="lead text-body-secondary">
+        <h1 class="fw-light" data-i18n="hero_title">Software Album</h1>
+        <p class="lead text-body-secondary" data-i18n="hero_lead">
           公開中のフリーソフトの一覧です。最新版のダウンロード、オンラインマニュアル、更新履歴へのリンクをまとめています。
         </p>
       </div>
@@ -56,21 +57,21 @@
                 <img src="./assets/img/benri-na-pdf-icon.png" alt="" width="22" height="22" class="me-1">
                 benri-na-pdf
               </h5>
-              <p class="card-text flex-grow-1">
+              <p class="card-text flex-grow-1" data-i18n="desc_benri">
                 スキャンPDFの編集に向いた、ブラウザ技術ベースの軽量 PDF エディタ。
                 二値化・傾き補正・OCR・ページ並べ替え・結合などを 1 アプリで完結。
               </p>
               <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <a href="https://informanellica.github.io/benri-na-pdf/" class="btn btn-sm btn-outline-secondary">
-                    <i class="bi bi-info-circle me-1"></i>詳細
+                    <i class="bi bi-info-circle me-1"></i><span data-i18n="btn_details">詳細</span>
                   </a>
                   <a href="https://informanellica.github.io/benri-na-pdf/manual.html" class="btn btn-sm btn-outline-secondary">
-                    <i class="bi bi-book me-1"></i>マニュアル
+                    <i class="bi bi-book me-1"></i><span data-i18n="btn_manual">マニュアル</span>
                   </a>
                   <a href="https://github.com/informanellica/benri-na-pdf/releases/latest"
                      class="btn btn-sm btn-outline-primary">
-                    <i class="bi bi-download me-1"></i>最新版
+                    <i class="bi bi-download me-1"></i><span data-i18n="btn_latest">最新版</span>
                   </a>
                 </div>
                 <small class="text-body-secondary">Windows</small>
@@ -78,7 +79,7 @@
               <div class="mt-2 small text-body-secondary">
                 <span class="me-2"><i class="bi bi-tag me-1"></i>v0.1.3</span>
                 <a href="https://github.com/informanellica/benri-na-pdf/releases" class="text-body-secondary">
-                  <i class="bi bi-clock-history me-1"></i>更新履歴
+                  <i class="bi bi-clock-history me-1"></i><span data-i18n="changelog">更新履歴</span>
                 </a>
               </div>
             </div>
@@ -95,18 +96,18 @@
                 <img src="./assets/img/tab-volume-mixer-icon.png" alt="" width="22" height="22" class="me-1">
                 Tab Volume Mixer
               </h5>
-              <p class="card-text flex-grow-1">
+              <p class="card-text flex-grow-1" data-i18n="desc_vm">
                 ブラウザのタブごとに音量を個別調整。小さい音は最大 600% までブースト、
                 大きい音は下げる／ミュート。ひとつのミキサーでまとめて操作できます。
               </p>
               <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <a href="https://informanellica.github.io/ia-audioMixer/" class="btn btn-sm btn-outline-secondary">
-                    <i class="bi bi-info-circle me-1"></i>詳細
+                    <i class="bi bi-info-circle me-1"></i><span data-i18n="btn_details">詳細</span>
                   </a>
                   <a href="https://github.com/informanellica/ia-audioMixer/releases/latest"
                      class="btn btn-sm btn-outline-primary">
-                    <i class="bi bi-download me-1"></i>最新版
+                    <i class="bi bi-download me-1"></i><span data-i18n="btn_latest">最新版</span>
                   </a>
                 </div>
                 <small class="text-body-secondary">Chrome / Edge</small>
@@ -114,7 +115,7 @@
               <div class="mt-2 small text-body-secondary">
                 <span class="me-2"><i class="bi bi-tag me-1"></i>v1.0.2</span>
                 <a href="https://github.com/informanellica/ia-audioMixer/releases" class="text-body-secondary">
-                  <i class="bi bi-clock-history me-1"></i>更新履歴
+                  <i class="bi bi-clock-history me-1"></i><span data-i18n="changelog">更新履歴</span>
                 </a>
               </div>
             </div>
@@ -131,18 +132,18 @@
                 <img src="./assets/img/auto-refresh-icon.png" alt="" width="22" height="22" class="me-1">
                 Auto Refresh
               </h5>
-              <p class="card-text flex-grow-1">
+              <p class="card-text flex-grow-1" data-i18n="desc_ar">
                 指定した間隔でタブを自動再読み込み。タブごとに設定でき、
                 プリセット・カスタム間隔・ひと目で分かるバッジ付き。
               </p>
               <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <a href="https://informanellica.github.io/ia-autoRefresh/" class="btn btn-sm btn-outline-secondary">
-                    <i class="bi bi-info-circle me-1"></i>詳細
+                    <i class="bi bi-info-circle me-1"></i><span data-i18n="btn_details">詳細</span>
                   </a>
                   <a href="https://github.com/informanellica/ia-autoRefresh/releases/latest"
                      class="btn btn-sm btn-outline-primary">
-                    <i class="bi bi-download me-1"></i>最新版
+                    <i class="bi bi-download me-1"></i><span data-i18n="btn_latest">最新版</span>
                   </a>
                 </div>
                 <small class="text-body-secondary">Chrome / Edge</small>
@@ -150,7 +151,7 @@
               <div class="mt-2 small text-body-secondary">
                 <span class="me-2"><i class="bi bi-tag me-1"></i>v1.0.2</span>
                 <a href="https://github.com/informanellica/ia-autoRefresh/releases" class="text-body-secondary">
-                  <i class="bi bi-clock-history me-1"></i>更新履歴
+                  <i class="bi bi-clock-history me-1"></i><span data-i18n="changelog">更新履歴</span>
                 </a>
               </div>
             </div>
@@ -167,18 +168,18 @@
                 <img src="./assets/img/shortcut-blocker-icon.png" alt="" width="22" height="22" class="me-1">
                 Shortcut Blocker
               </h5>
-              <p class="card-text flex-grow-1">
+              <p class="card-text flex-grow-1" data-i18n="desc_sb">
                 邪魔なキーボードショートカットを個別にオン／オフ。誤操作の Ctrl+W、
                 Backspace での戻る、F12 などをブロックできます。
               </p>
               <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <a href="https://informanellica.github.io/ia-disableShortcut/" class="btn btn-sm btn-outline-secondary">
-                    <i class="bi bi-info-circle me-1"></i>詳細
+                    <i class="bi bi-info-circle me-1"></i><span data-i18n="btn_details">詳細</span>
                   </a>
                   <a href="https://github.com/informanellica/ia-disableShortcut/releases/latest"
                      class="btn btn-sm btn-outline-primary">
-                    <i class="bi bi-download me-1"></i>最新版
+                    <i class="bi bi-download me-1"></i><span data-i18n="btn_latest">最新版</span>
                   </a>
                 </div>
                 <small class="text-body-secondary">Chrome / Edge</small>
@@ -186,7 +187,7 @@
               <div class="mt-2 small text-body-secondary">
                 <span class="me-2"><i class="bi bi-tag me-1"></i>v1.0.2</span>
                 <a href="https://github.com/informanellica/ia-disableShortcut/releases" class="text-body-secondary">
-                  <i class="bi bi-clock-history me-1"></i>更新履歴
+                  <i class="bi bi-clock-history me-1"></i><span data-i18n="changelog">更新履歴</span>
                 </a>
               </div>
             </div>
@@ -201,7 +202,7 @@
 <footer class="text-body-secondary py-4 border-top">
   <div class="container">
     <p class="mb-1">
-      <a href="./support.html" class="text-body-secondary me-3"><i class="bi bi-life-preserver me-1"></i>サポート</a>
+      <a href="./support.html" class="text-body-secondary me-3"><i class="bi bi-life-preserver me-1"></i><span data-i18n="nav_support">サポート</span></a>
       <a href="mailto:support@informanellica.com" class="text-body-secondary"><i class="bi bi-envelope me-1"></i>support@informanellica.com</a>
     </p>
     <p class="mb-0">© Informanellica</p>
@@ -209,5 +210,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/i18n.js"></script>
 </body>
 </html>
