@@ -73,10 +73,20 @@
   function buildSwitcher(lang) {
     const host = document.getElementById("lang-switcher");
     if (!host) return;
+
+    const group = document.createElement("div");
+    group.className = "input-group input-group-sm";
+    group.style.width = "auto";
+
+    const icon = document.createElement("span");
+    icon.className = "input-group-text";
+    icon.innerHTML = '<i class="bi bi-translate"></i>';
+
     const sel = document.createElement("select");
-    sel.className = "form-select form-select-sm bg-dark text-light border-secondary";
-    sel.setAttribute("aria-label", "Language");
-    sel.style.width = "auto";
+    sel.className = "form-select form-select-sm";
+    sel.setAttribute("aria-label", "Language / 言語");
+    sel.title = "Language / 言語";
+    sel.style.maxWidth = "10rem";
     for (const [code, name] of LANGS) {
       const o = document.createElement("option");
       o.value = code; o.textContent = name; if (code === lang) o.selected = true;
@@ -86,7 +96,10 @@
       localStorage.setItem("site_lang", sel.value);
       apply(sel.value);
     });
-    host.appendChild(sel);
+
+    group.appendChild(icon);
+    group.appendChild(sel);
+    host.appendChild(group);
   }
 
   const lang = resolveLang();
